@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 /* Main */
 body{
-  background: #a6a6a6 !important;
+  /* background: #a6a6a6 !important; */
+  font-family: 'Open Sans', sans-serif !important;
+}
+.row{
+  margin: 0px !important;
 }
 /* Header */
 .navbar{
@@ -9,37 +15,65 @@ body{
 .navbar .navbar-brand{
   padding: 10px 0px 10px 50px;
 }
-/* Login Form */
-.login-form{
-  margin-top: 100px;
-  font-size: 24px;
-  margin-left: auto;
-  padding: 100px 50px 100px 50px;
-  margin-right: auto;
-  border-radius: 10px;
-  border: 5px solid #000000;
+/* Login Area */
+.login-area{
+  padding: 100px 70px 100px 70px !important;
+}
+.login-area h1{
+  font-weight: 800;
+  font-size: 46px;
+  padding-bottom: 10px;
+}
+.login-area p{
+  color: #D3D3D3;
+  font-weight: 600 !important;
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 .login-form input{
+  border: 1px solid #D3D3D3;
   width: 100%;
+  padding: 10px;
   border-radius: 10px;
-  border: none;
-  padding: 5px 10px 5px 10px;
-}
-.login-form input:focus{
-  outline: none;
 }
 .login-form label{
+  padding-top: 50px;
+  font-weight: 600 !important;
+  font-size: 20px;
+}
+.login-form .login-btn{
+  margin-top: 100px;
+  width: 100%;
+  border: 1px solid #D3D3D3;
+  padding: 10px;
+  background: #14ee80;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.login-area .forgot-pass{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+}
+.login-area .forgot-pass a{
+  color: #14ee80;
+}
+.login-right{
+  text-align: center;
+  background: 	#F5F5F5;
+}
+.login-right p{
+  padding-top: 100px;
+  font-size: 30px;
+  color: #808080;
+}
+.login-right h1{
+  font-size: 56px;
+  padding-top: 20px;
   font-weight: 700;
-  font-size: 28px;
 }
-.login-form .sign-in-btn{
-  border-radius: 10px;
-  margin-right: 20px;
-  padding: 10px;
-  background-color: #008000;
-}
-.login-form .forgot-pass-btn{
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #DC143C;
+.login-right .login-image{
+  padding: 50px 0px;
 }

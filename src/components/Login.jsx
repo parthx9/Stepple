@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import loginImage from "../assets/login-image.svg"
+ 
 const Login = () =>{
 
   const [email, setEmail] = useState(null)
@@ -11,33 +12,53 @@ const Login = () =>{
   }
 
   return(
-    <div className='container'>
-      <div className='login-form'>
-        <form onSubmit={handleLogin}>
-          <div className='form-group row'>
-            <label htmlFor='email' className='col-sm-4 col-form-label' >Email/Username</label>
-            <div className='col-sm-8'>
-              <input id='email' type='text' onChange={(e)=>setEmail(e.target.value)}></input>
+    <div className=''>
+      <div className='login'>
+        <div className='row'>
+          <div className='col-md-4 login-area' >
+            <h1>
+              Log In.
+            </h1>
+            <p>
+              Log In with your data you entered <br />
+              during your registration
+            </p>
+            <form className='login-form' onSubmit={handleLogin} >
+              <div className='row'>
+                <label htmlFor='email'>
+                  Enter your email address
+                </label>
+              </div>
+              <input type='text' id='email' onChange={(e)=>setEmail(e.target.value)} ></input>
+              <div className='row'>
+                <label htmlFor='password'>
+                  Enter your password
+                </label>
+              </div>
+              <input type='password' id='password' onChange={(e)=>setPass(e.target.value)} ></input>
+              <div className='row'>
+                <button 
+                  className='login-btn'
+                  type='submit'
+                  >
+                  Log In
+                </button>
+              </div>
+            </form>
+            <div className='forgot-pass'>
+              <a href='#'>
+                Forgot Password?
+              </a>
             </div>
           </div>
-          <div className='form-group row'>
-            <label htmlFor='password' className='col-sm-4 col-form-label' >Password</label>
-            <div className='col-sm-8'>
-              <input id='email' type='password' onChange={(e)=>setPass(e.target.value)}></input>
-            </div>
+          <div className='col-md-8 login-right .d-none .d-lg-block .d-xl-none'>
+            <p>
+              Nice to see you again
+            </p>
+            <h1>Welcome Back!</h1>
+            <img className='login-image' src={loginImage} width='80%' alt='' />
           </div>
-          <div className='form-group text-center'>
-            <button 
-              className='sign-in-btn'
-              type='submit'
-              >
-              Sign In
-            </button>
-            <button className='forgot-pass-btn'>
-              Forgot Password?
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   )
