@@ -60,6 +60,18 @@ body{
 .login-area .forgot-pass a{
   color: #14ee80;
 }
+.signup-link{
+  margin-top: 50px;
+  text-align: center;
+}
+.signup-link a{
+  padding: 10px 50px 10px 50px;
+  border-radius: 15px;
+  color: #14ee80 !important;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid #14ee80;
+}
 .login-right{
   text-align: center;
   background: 	#F5F5F5;

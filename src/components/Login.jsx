@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import loginImage from "../assets/login-image.svg"
  
 const Login = () =>{
@@ -49,6 +50,11 @@ const Login = () =>{
               <a href='#'>
                 Forgot Password?
               </a>
+            </div>
+            <div className='signup-link'>
+              <Link to='/signup'>
+                Sign Up Now
+              </Link>
             </div>
           </div>
           <div className='col-md-8 login-right .d-none .d-lg-block .d-xl-none'>
