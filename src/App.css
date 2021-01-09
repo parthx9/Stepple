@@ -89,6 +89,73 @@ body{
 .login-right .login-image{
   padding: 50px 0px;
 }
+/* SignUp */
+/* .signup-area{
+  background: 	#F5F5F5;
+} */
+.signup .signup-left{
+  text-align: center;
+  background: 	#F5F5F5;
+}
+.signup .signup-left h1{
+  font-size: 56px;
+  padding-top: 150px;
+  font-weight: 700;
+}
+.signup-left img{
+  padding: 150px 0px 50px 0px;
+}
+.signup-area{
+  padding: 100px 70px 100px 70px !important;
+}
+.signup-area h1{
+  font-weight: 800;
+  font-size: 46px;
+  padding-bottom: 10px;
+}
+.signup-area p{
+  color: #D3D3D3;
+  font-weight: 600 !important;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.signup-form input{
+  border: 1px solid #D3D3D3;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.signup-form label{
+  padding-top: 20px;
+  font-weight: 600 !important;
+  font-size: 20px;
+}
+.signup-form .signup-btn{
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #D3D3D3;
+  padding: 10px;
+  background: #14ee80;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.signup-area .have-account{
+  text-align: center;
+  padding: 50px 0px 20px 0px ;
+}
+.signup-area .login-link{
+  text-align: center;
+}
+.signup-area .login-link a{
+  padding: 10px 50px 10px 50px;
+  border-radius: 15px;
+  color: #14ee80 !important;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid #14ee80;
+}
 /* Footer */
 .footer{
   color: #fff;

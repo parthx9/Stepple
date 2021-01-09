@@ -11,6 +11,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <Login />
           </Route>
           <Route path='/signup'>
-            <p>Sign Up!</p>
+            <SignUp />
           </Route>
         </Switch>
       </Router>
